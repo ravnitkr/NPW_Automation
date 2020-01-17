@@ -61,17 +61,22 @@ public class GapLocators
 			return sXpath;
 		}
 		
-		public static String verifyTextOnEachPageBeforeEnteringText()
-		{		
-			sXpath = "//span[@class='om-label']";
-			return sXpath;
-		}
+//		public static String verifyTextOnEachPageBeforeEnteringText()
+//		{		
+//			sXpath = "//span[@class='om-label']";
+//			return sXpath;
+//		}
 		
-		public static String gapCoverText()
+		public static String verifyTextOnEveryPage()
 		{
-			sXpath = "//div[contains(@class, 'gap-personal-details')]//h4";
+			sXpath = "//h4";
 			return sXpath;
 		}
+//		public static String verifyDependentDetailsText()
+//		{
+//			sXpath = "//div[contains(@class, 'gap-dependent-details')]//h4";
+//			return sXpath;
+//		}
 		public static String startCover()
 		{
 			sXpath = "//span[contains(@class, 'om-icon-container')]";

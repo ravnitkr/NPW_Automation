@@ -11,7 +11,6 @@ import com.npw.lib.GapNavigation;
 import com.npw.locators.GapLocators;
 import com.om.framework.basetest.BaseTest;
 import com.om.framework.lib.Messages;
-import com.om.framework.lib.Wait;
 import com.om.framework.reporting.Reporting;
 
 public class GapPageObject {
@@ -28,7 +27,7 @@ public class GapPageObject {
 			bStatus= GapNavigation.textInputfield("Surname", surName);
 			if(!bStatus) return bStatus;			
 			//enter contact number
-			bStatus= GapNavigation.textInputfield("Contact number", phoneNumber);
+			bStatus= GapNavigation.textInputfield("Cellphone Number", phoneNumber);
 			if(!bStatus) return bStatus;			
 			//enter email address
 			bStatus= GapNavigation.textInputfield("Email Address", email);	
@@ -37,9 +36,17 @@ public class GapPageObject {
 			return bStatus;
 		}
 	
-		public static boolean continueButton()
-		{		
+		public static boolean continueButton() throws HeadlessException, IOException, AWTException
+		{	
+			String getText= GapNavigation.verifyText();
+			if(getText.contains("Gap Cover Application"))
+			{
 			bStatus = GapNavigation.continueButton("Continue");
+			}
+			else
+			{
+				 Reporting.logResults("Fail", "Could not find the Text " , "Found the required text");
+			}
 			if(!bStatus) 
 			{
 			return bStatus;
@@ -49,6 +56,7 @@ public class GapPageObject {
 	
 		public static boolean getToKnowBetterStep(String label, String ValueToSelect, String Intials, String idNumber, String dob) throws InterruptedException, HeadlessException, IOException, AWTException
 		{
+			
 			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.dropDownParentElements(label));
 			if(!bStatus) return bStatus;
 			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.selectValueByText(ValueToSelect));	
@@ -66,8 +74,8 @@ public class GapPageObject {
 		
 		public static boolean whereDoYouLiveStep(String suiteNo, String streetName, String suburbName, String city, String postalCode) throws InterruptedException, HeadlessException, IOException, AWTException
 		{
-			bStatus = GapNavigation.continueButton("Continue");
-			if(!bStatus) return bStatus;
+			//bStatus = GapNavigation.continueButton("Continue");
+			//if(!bStatus) return bStatus;
 			bStatus= GapNavigation.textInputfield("Apartment/Suite Name and Number", suiteNo);
 			if(!bStatus) return bStatus;
 			bStatus= GapNavigation.textInputfield("Street Name", streetName);
@@ -124,6 +132,8 @@ public class GapPageObject {
 		
 		public static boolean getAllValidationMessages(String pageName) throws InterruptedException, HeadlessException, IOException, AWTException
 		{
+			try
+			{
 			List<WebElement> getAllValidations= GapNavigation.getallValidationMessages();
 			String keyName;
 			String keyValue;
@@ -136,19 +146,25 @@ public class GapPageObject {
 				Reporting.logResults("Pass", "Getting validation: " , "Got validation" + keyValue);				
 				if(getAllValidations.get(i).getText().equals(keyValue))
                 {
-					  Reporting.logResults("Pass", "Comparing stored Validations with the actual ones: " , "Validation " + getAllValidations.get(i).getText() + " MATCHES WITH " + keyValue);					  
+					  Reporting.logResults("Pass", "Comparing stored Validations with the actual ones: " , "VALIDATION - " + getAllValidations.get(i).getText() + " MATCHES WITH " + keyValue);					  
                 	  bStatus = true;
 	            }
 				else
 				{
-					Reporting.logResults("Fail", "Comparing stored Validations with the actual ones: ", "Unable to get all validations on  great decision step due to" + Messages.appErrorMsg);
-					bStatus = false;
+					Reporting.logResults("Fail", "Comparing stored Validations with the actual ones: ", "Unable to get all validations on  great decision step due to" + Messages.appErrorMsg);				
+					return false;
 				}
-			}			
+			}
+			}
+			catch(Exception e)
+			{
+				bStatus = false;
+				Messages.errorMsg = e.getMessage();
+			}
+			
 			return bStatus;		
-		}
 		
 	
-
+			}
 }
 

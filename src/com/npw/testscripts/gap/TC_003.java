@@ -3,24 +3,30 @@ package com.npw.testscripts.gap;
 import java.awt.AWTException;
 import java.awt.HeadlessException;
 import java.io.IOException;
+import java.util.Map;
 
 import org.testng.annotations.Test;
 
 import com.om.framework.basetest.BaseTest;
 import com.om.framework.lib.Messages;
+import com.om.framework.lib.Utilities;
 import com.om.framework.pageObjects.GapPageObject;
 import com.om.framework.reporting.Reporting;
 
 public class TC_003 extends BaseTest{
 
 	private static boolean bStatus;
+	private static Map<String,String> objMap;
 	
 	
 	@Test
-	public static void getAllValidatiuonsStepOne() throws IOException, HeadlessException, AWTException, InterruptedException
+	public static void getAllValidationsFromGreatDecisionPage() throws IOException, HeadlessException, AWTException, InterruptedException
 	{	
 		Reporting.Functionality = "GAP";
 		Reporting.Testcasename = "Get all validations from the GREAT DECISION page";
+		
+		//Get data from Excel sheet
+		objMap = Utilities.readTestData((Utilities.getProjectPath() + "TestData.xls"), "GAP_Data", "TC_03_GetAllValidationsFromGreatDecisionPage");
 		try
 		{
 		bStatus = GapPageObject.continueButton();
@@ -31,13 +37,13 @@ public class TC_003 extends BaseTest{
 		}
 		Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
 		//Enter invalid details 
-		bStatus = GapPageObject.greateDecisionStep("978767", "23432434", "hsbd", "rkaur445555");
+		bStatus = GapPageObject.greateDecisionStep(objMap.get("FirstName"), objMap.get("Surname"), objMap.get("Cellphone"), objMap.get("Email"));
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Enter invalid details on great decision step.", "Unable to add details  on great decision step due to" + Messages.errorMsg);
 			return;
 		}
-		Reporting.logResults("Pass", "Enter invalid details on great decision step.", "Unable to add details  on great decision step due to");
+		Reporting.logResults("Pass", "Enter invalid details on great decision step.", "Added details  on great decision step");
 		//Get all validations
 		bStatus = GapPageObject.getAllValidationMessages("GreatDecisionPage");
 		if(!bStatus)

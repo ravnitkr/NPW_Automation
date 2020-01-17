@@ -74,6 +74,7 @@ public class BaseTest extends TestListenerAdapter
 	
 	public static FirefoxProfile ffProfile = new FirefoxProfile();
 	public static WebDriver driver;
+
 	
 	
 	/**
@@ -262,6 +263,36 @@ public class BaseTest extends TestListenerAdapter
 		System.out.println("");
 	}
 
+//	public static Map<String, String> readData() throws IOException
+//	{
+//		
+//		objGAPDtls = Utilities.readTestData("PathToSheet", "FileName", "testCaseNAme");			
+//		String firstName = objGAPDtls.get("FirstName");
+//		String surName = objGAPDtls.get("Surname");
+//		String cellPhone = objGAPDtls.get("Cellphone");
+//		String title = objGAPDtls.get("Title");
+//		String titleValue = objGAPDtls.get("TitleValue");
+//		String initials = objGAPDtls.get("Initials");
+//		String RSA_ID = objGAPDtls.get("RSAID");
+//		String DOB = objGAPDtls.get("DOB");
+//		String ApartmentNumber = objGAPDtls.get("ApartmentNumber");
+//		String StreetName = objGAPDtls.get("StreetName");
+//		String Suburb = objGAPDtls.get("Suburb");
+//		String City = objGAPDtls.get("City"); 
+//		String PostalCode = objGAPDtls.get("PostalCode"); 
+//		String dob = objGAPDtls.get("DOB");
+//		String medicalAidProvider = objGAPDtls.get("MedicalAidProvider");
+//		String medicalAidNumber = objGAPDtls.get("MedicalAidNumber");
+//		String medicalAidPLan = objGAPDtls.get("MedicalAidPlan");
+//		String medicalStartDate = objGAPDtls.get("MedicalAidStartDate"); 
+//		String bankName = objGAPDtls.get("BankName"); 
+//		String accountName = objGAPDtls.get("AccountNumber");
+//		String accountTYpe = objGAPDtls.get("AccountType"); 	
+//		
+//		return new readData();
+//		
+//		
+//	}
 
 
 }

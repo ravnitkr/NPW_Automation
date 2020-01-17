@@ -16,7 +16,7 @@ public class GapNavigation extends BaseTest
 	
 	public static boolean continueButton(String gapContinueButton)
 	{
-		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.continueButton(gapContinueButton)), 20000));
+		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.continueButton(gapContinueButton)), 20));
 		{
 		return Elements.clickElement(By.xpath(GapLocators.NavigationMenu.continueButton(gapContinueButton)));	
 		}
@@ -24,7 +24,7 @@ public class GapNavigation extends BaseTest
 	
 	public static boolean clickUsingId(String id)
 	{
-		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.clickUsingID(id)), 20000));
+		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.clickUsingID(id)), 20));
 		{
 		return Elements.clickElement(By.xpath(GapLocators.NavigationMenu.clickUsingID(id)));	
 		}
@@ -32,36 +32,36 @@ public class GapNavigation extends BaseTest
 	
 	public static boolean textInputfield(String searchableText, String inputText)
 	{
-		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.inputFieldElements(searchableText)), 10000));
+		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.inputFieldElements(searchableText)), 10));
 		{
 		return Elements.enterText(By.xpath(GapLocators.NavigationMenu.inputFieldElements(searchableText)), inputText);
 		}
 	}
 	public static boolean selectValueFromDropDown(String locator)
 	{
-		if(Wait.waitForElementClickability(By.xpath(locator), 10000));
+		if(Wait.waitForElementClickability(By.xpath(locator), 10));
 		{
 		return Elements.clickElement(By.xpath(locator));
 		}
 	}
-	public static String getCoverText()
+	public static String verifyText()
 	{
-		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.gapCoverText()), 10000));
+		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.verifyTextOnEveryPage()), 10));
 		{
-		return Elements.getText(By.xpath(GapLocators.NavigationMenu.gapCoverText()));
+		return Elements.getText(By.xpath(GapLocators.NavigationMenu.verifyTextOnEveryPage()));
 		}
 	}
 	
-	public static String verifyText()
-	{
-		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.verifyTextOnEachPageBeforeEnteringText()), 10000));
-		{
-		return Elements.getText(By.xpath(GapLocators.NavigationMenu.verifyTextOnEachPageBeforeEnteringText()));
-		}
-	}
+//	public static String getDependentDetailsText(String Page)
+//	{
+//		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.verifyTextOnEveryPage(pageName)), 10));
+//		{
+//		return Elements.getText(By.xpath(GapLocators.NavigationMenu.verifyTextOnEveryPage(pageName)));
+//		}
+//	}
 	public static boolean scrollToElement(String locator)
 	{
-		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.inputFieldElements(locator)), 10000));
+		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.inputFieldElements(locator)), 10));
 		{
 		return Elements.scrollToView(By.xpath(GapLocators.NavigationMenu.inputFieldElements(locator)));
 		}
@@ -69,7 +69,7 @@ public class GapNavigation extends BaseTest
 	
 	public static List<WebElement> getallValidationMessages()
 	{
-		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.getValidationMessages()), 10000));
+		if(Wait.waitForElementClickability(By.xpath(GapLocators.NavigationMenu.getValidationMessages()), 10));
 		{
 		return Elements.getWebElements(By.xpath(GapLocators.NavigationMenu.getValidationMessages()));
 		}

@@ -32,8 +32,8 @@ public class Utilities
 		String sValue = null;
 		try
 		{
+			objMap = new HashMap<String, String>();
 
-			objMap = new HashMap<String, String>();	
 			Workbook objWorkbook = Workbook.getWorkbook(new File(sFilePath));
 			Sheet objSheet = objWorkbook.getSheet(sSheetName);
 			int iRowCount = objSheet.getRows();
@@ -43,7 +43,7 @@ public class Utilities
 				String sCurTestCaseName = objSheet.getCell(0,iRowCounter).getContents();
 				if ((sCurTestCaseName.equalsIgnoreCase(sTestCaseName)))
 				{		
-					for(int iColCounter = 1;iColCounter<iColCount;iColCounter++)
+					for(int iColCounter = 0;iColCounter<iColCount;iColCounter++)
 					{
 						sKey = objSheet.getCell(iColCounter,0).getContents();
 						System.out.println(sKey);
