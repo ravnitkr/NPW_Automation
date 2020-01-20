@@ -7,6 +7,8 @@ import java.util.Map;
 
 import org.testng.annotations.Test;
 
+import com.npw.lib.RA.CommonFunc;
+import com.npw.lib.RA.NavigateTo;
 import com.om.framework.basetest.BaseTest;
 import com.om.framework.lib.Messages;
 import com.om.framework.lib.Utilities;
@@ -17,18 +19,31 @@ public class TC_001 extends BaseTest
 {
 	private static boolean bStatus;
 	private static Map<String,String> objMap;
+	private static String TestData_path_GAP= "TestData/TestData.xls";
+	private static String sheetName="GAP";
+	private static String TestCaseName="TC_01_GapSubmitWholeApplication";
 	
 	@Test
 	public static void submitApp() throws IOException, HeadlessException, AWTException, InterruptedException
 	{	
 		Reporting.Functionality = "GAP";
 		Reporting.Testcasename = "GAP Positive Flow Test Case";
-		//add a function to dynamically pick up the class name and add it as a test case name.				
+					
 		try
 		{
 			
 		//Get data from Excel sheet
-		objMap = Utilities.readTestData((Utilities.getProjectPath() + "TestData.xls"), "GAP_Data", "TC_01_GapSubmitWholeApplication");	
+		objMap = Utilities.readTestData((Utilities.getProjectPath() + TestData_path_GAP), sheetName, TestCaseName);	
+		
+		//Navigate to the GAP APP		
+		bStatus=NavigateTo.hoverAndClickHeaderMenu(objMap);
+		bStatus=GapPageObject.selectPlan(objMap);
+		if(!bStatus)
+		{
+			Reporting.logResults("Fail", "Failed to get the plan", "Unable to get the plan due to " + Messages.errorMsg);
+			return;
+		}
+		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
 		
 		//Enter decision page details
 		bStatus = GapPageObject.continueButton();
@@ -38,13 +53,13 @@ public class TC_001 extends BaseTest
 			return;
 		}
 		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
-		bStatus = GapPageObject.greateDecisionStep(objMap.get("FirstName"), objMap.get("Surname"), objMap.get("Cellphone"), objMap.get("Email"));
+		bStatus = GapPageObject.greateDecisionStep(objMap);
 		if(!bStatus)
 		{
-			Reporting.logResults("Fail", "Enter/Fill the details in Decision page.", "Unable to enter the details.. due to " + Messages.errorMsg);
+			Reporting.logResults("Fail", "Enter the details in Decision page.", "Unable to enter the details.. due to " + Messages.errorMsg);
 			return;
 		}
-		Reporting.logResults("Pass", "Enter/Fill the details in Decision page.", "Succesfully entered the details in decision page.");	
+		Reporting.logResults("Pass", "Enter the details in Decision page.", "Succesfully entered the details in decision page.");	
 		
 		//Enter get to know better step details
 		bStatus = GapPageObject.continueButton();
@@ -61,7 +76,7 @@ public class TC_001 extends BaseTest
 			return;
 		}
 		Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
-		bStatus = GapPageObject.getToKnowBetterStep( objMap.get("Title"), objMap.get("TitleValue"), objMap.get("Initials"), objMap.get("RSAID"), objMap.get("DOB"));
+		bStatus = GapPageObject.getToKnowBetterStep(objMap);
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Enter/Fill the details in get To know better page.", "Unable to enter the details.. due to " + Messages.errorMsg);
@@ -77,7 +92,7 @@ public class TC_001 extends BaseTest
 		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
 		
 		//Enter details on where do you live page
-		bStatus = GapPageObject.whereDoYouLiveStep(objMap.get("ApartmentNumber"), objMap.get("StreetName"), objMap.get("Suburb"), objMap.get("City"), objMap.get("PostalCode"));
+		bStatus = GapPageObject.whereDoYouLiveStep(objMap);
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Enter/Fill the details in where do you live page", "Unable to enter the details.. due to " + Messages.errorMsg);
@@ -104,7 +119,7 @@ public class TC_001 extends BaseTest
 		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
 		
 		//Enter details on Medical Aid page
-		bStatus = GapPageObject.medicalAidDetails(objMap.get("MedicalAidProvider"), objMap.get("MedicalAidNumber"), objMap.get("MedicalAidPlan"), objMap.get("MedicalAidStartDate"));
+		bStatus = GapPageObject.medicalAidDetails(objMap);
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Enter/Fill the details in medical cover page", "Unable to enter the details.. due to " + Messages.errorMsg);
@@ -120,7 +135,7 @@ public class TC_001 extends BaseTest
 		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
 		
 		//Enter details on Payment details page
-		bStatus = GapPageObject.paymentDetails(objMap.get("AccountNumber"), objMap.get("AccountType"));
+		bStatus = GapPageObject.paymentDetails(objMap);
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Added details on payment page", "Unable to add details on payment page" + Messages.errorMsg);

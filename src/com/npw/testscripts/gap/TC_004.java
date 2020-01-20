@@ -34,7 +34,7 @@ public class TC_004 extends BaseTest{
 					return;
 				}
 				Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
-				bStatus = GapPageObject.greateDecisionStep(objMap.get("FirstName"), objMap.get("Surname"), objMap.get("Cellphone"), objMap.get("Email"));
+				bStatus = GapPageObject.greateDecisionStep(objMap);
 				if(!bStatus)
 				{
 					Reporting.logResults("Fail", "Enter/Fill the details in Decision page.", "Unable to enter the details.. due to" + Messages.errorMsg);
@@ -56,7 +56,7 @@ public class TC_004 extends BaseTest{
 					return;
 				}
 				Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
-				bStatus = GapPageObject.getToKnowBetterStep( objMap.get("Title"), objMap.get("TitleValue"), objMap.get("Initials"), objMap.get("RSAID"), objMap.get("DOB"));
+				bStatus = GapPageObject.getToKnowBetterStep(objMap);
 				if(!bStatus)
 				{
 					Reporting.logResults("Fail", "Enter/Fill the details in get To know better page.", "Unable to enter the details.. due to" + Messages.errorMsg);
@@ -72,7 +72,7 @@ public class TC_004 extends BaseTest{
 				Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
 				
 				//Enter details on where do you live page
-				bStatus = GapPageObject.whereDoYouLiveStep(objMap.get("ApartmentNumber"), objMap.get("StreetName"), objMap.get("Suburb"), objMap.get("City"), objMap.get("PostalCode"));
+				bStatus = GapPageObject.whereDoYouLiveStep(objMap);
 				if(!bStatus)
 				{
 					Reporting.logResults("Fail", "Enter/Fill the details in where do you live page", "Unable to enter the details.. due to" + Messages.errorMsg);

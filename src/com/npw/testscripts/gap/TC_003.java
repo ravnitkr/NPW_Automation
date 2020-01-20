@@ -16,6 +16,9 @@ import com.om.framework.reporting.Reporting;
 public class TC_003 extends BaseTest{
 
 	private static boolean bStatus;
+	private static String TestData_path_GAP= "TestData/TestData.xls";
+	private static String sheetName="GAP";
+	private static String TestCaseName="TC_01_GapSubmitWholeApplication";
 	private static Map<String,String> objMap;
 	
 	
@@ -26,7 +29,7 @@ public class TC_003 extends BaseTest{
 		Reporting.Testcasename = "Get all validations from the GREAT DECISION page";
 		
 		//Get data from Excel sheet
-		objMap = Utilities.readTestData((Utilities.getProjectPath() + "TestData.xls"), "GAP_Data", "TC_03_GetAllValidationsFromGreatDecisionPage");
+		objMap = Utilities.readTestData((Utilities.getProjectPath() + TestData_path_GAP), sheetName, TestCaseName);	
 		try
 		{
 		bStatus = GapPageObject.continueButton();
@@ -37,7 +40,7 @@ public class TC_003 extends BaseTest{
 		}
 		Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
 		//Enter invalid details 
-		bStatus = GapPageObject.greateDecisionStep(objMap.get("FirstName"), objMap.get("Surname"), objMap.get("Cellphone"), objMap.get("Email"));
+		bStatus = GapPageObject.greateDecisionStep(objMap);
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Enter invalid details on great decision step.", "Unable to add details  on great decision step due to" + Messages.errorMsg);

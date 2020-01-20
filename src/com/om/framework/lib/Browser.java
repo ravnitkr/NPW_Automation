@@ -20,6 +20,7 @@ public class Browser extends BaseTest
 {
 	private static Logger logger=Logger.getLogger("Browser");
 	private static WebDriver wDriver;
+	private static String sPathOfDriver;
 
 	/**
 	 * Performs a driver.get() to load the given URL on the current browser.
@@ -78,8 +79,22 @@ public class Browser extends BaseTest
 			Messages.errorMsg="No browser drivers found";
 			logger.warn("The application could not be invoked due to "+Messages.errorMsg);
 			return wDriver;
-		}	
+		}			
+		
 	}
+	
+//	public static String getDriverPath() {
+//	      String OS = System.getProperty("os.name");
+//
+//	        if (OS.contains("Window")) {
+//	            return "libs/chromedriver_win"
+//	        } else if (OS.contains("Mac")) {
+//	            return "libs/chromedriver_mac"
+//	        } else {
+//	            return "libs/chromedriver_linux"
+//	        }
+//	         
+//	}
 
 	private static WebDriver openFirefoxBrowser(String sURL, String sPathOfDriver)
 	{	

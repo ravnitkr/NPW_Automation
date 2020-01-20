@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import com.npw.lib.GapNavigation;
+import com.npw.lib.GAP.GapNavigation;
 import com.om.framework.basetest.BaseTest;
 import com.om.framework.lib.Messages;
 import com.om.framework.reporting.Reporting;

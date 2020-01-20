@@ -1,0 +1,18 @@
+<suite name="RunningGAP/RATestCases">
+ <test name="GAPTestCases">
+ <classes>
+ <class name="com.npw.testscripts.gap.TC_001" />
+ <class name="com.npw.testscripts.gap.TC_002" />
+ <class name="com.npw.testscripts.gap.TC_003" />
+ <class name="com.npw.testscripts.gap.TC_004" />
+ </classes>
+ </test>
+ 
+ 
+ <test name="RATestCases">
+ <classes>
+ <class name="com.npw.testscripts.ra.TC_01_CreateRAApplication" />
+ <class name="com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication" />
+ </classes>
+ </test>
+</suite>

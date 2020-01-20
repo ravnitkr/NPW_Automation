@@ -17,6 +17,9 @@ public class TC_002 extends BaseTest{
 	
 	private static boolean bStatus;
 	private static Map<String,String> objMap;
+	private static String TestData_path_GAP= "TestData/TestData.xls";
+	private static String sheetName="GAP";
+	private static String TestCaseName="TC_01_GapSubmitWholeApplication";
 	
 	@Test(priority=1)
 	public static void getAllValidationsStepTwo() throws IOException, HeadlessException, AWTException, InterruptedException
@@ -25,7 +28,7 @@ public class TC_002 extends BaseTest{
 		Reporting.Testcasename = "Get all validations from the KNOW YOU BETTER page";
 		
 		//Get data from Excel sheet
-		objMap = Utilities.readTestData((Utilities.getProjectPath() + "TestData.xls"), "GAP_Data", "TC_02_GetAllValidationsFromKnowYouBetterPage");
+		objMap = Utilities.readTestData((Utilities.getProjectPath() + TestData_path_GAP), sheetName, TestCaseName);	
 		try
 		{
 		bStatus = GapPageObject.continueButton();
@@ -34,8 +37,8 @@ public class TC_002 extends BaseTest{
 			Reporting.logResults("Fail", "Click on CONTINUE button.", "Unable to click on the Continue button.. due to" + Messages.errorMsg);
 			return;
 		}
-		Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
-		bStatus = GapPageObject.greateDecisionStep(objMap.get("FirstName"), objMap.get("Surname"), objMap.get("Cellphone"), objMap.get("Email"));
+		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
+		bStatus = GapPageObject.greateDecisionStep(objMap);
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Enter/Fill the details in Decision page.", "Unable to enter the details.. due to" + Messages.errorMsg);
@@ -50,15 +53,15 @@ public class TC_002 extends BaseTest{
 			Reporting.logResults("Fail", "Click on CONTINUE button.", "Unable to click on the Continue button.. due to" + Messages.errorMsg);
 			return;
 		}
-		Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
+		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
 		bStatus = GapPageObject.continueButton();
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Click on CONTINUE button.", "Unable to click on the Continue button.. due to" + Messages.errorMsg);
 			return;
 		}
-		Reporting.logResults("Pass", "Click on CONTINUE button", "CLicked on Continue button");
-		bStatus = GapPageObject.getToKnowBetterStep( objMap.get("Title"), objMap.get("TitleValue"), objMap.get("Initials"), objMap.get("RSAID"), objMap.get("DOB"));
+		Reporting.logResults("Pass", "Click on CONTINUE button", "Clicked on Continue button");
+		bStatus = GapPageObject.getToKnowBetterStep(objMap);
 		if(!bStatus)
 		{
 			Reporting.logResults("Fail", "Enter/Fill the details in get To know better page.", "Unable to enter the details.. due to" + Messages.errorMsg);

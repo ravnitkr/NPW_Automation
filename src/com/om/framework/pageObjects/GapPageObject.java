@@ -4,123 +4,137 @@ import java.awt.AWTException;
 import java.awt.HeadlessException;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.npw.lib.GapNavigation;
-import com.npw.locators.GapLocators;
+import com.npw.lib.GAP.GapNavigation;
+import com.npw.locators.LocatorsGap;
+import com.npw.locators.LocatorsRA;
 import com.om.framework.basetest.BaseTest;
+import com.om.framework.lib.Elements;
 import com.om.framework.lib.Messages;
 import com.om.framework.reporting.Reporting;
 
 public class GapPageObject {
 	private static boolean bStatus;
+	private static Map<String,String> objMap;
 	
 	
 		//can have a parameter to skip the continue button action
-		public static boolean greateDecisionStep(String firstName, String surName, String phoneNumber, String email) throws InterruptedException, HeadlessException, IOException, AWTException
+		public static boolean greateDecisionStep(Map<String, String> objMap) throws InterruptedException, HeadlessException, IOException, AWTException
 		{	
 			//enter first name
-			bStatus= GapNavigation.textInputfield("First Name(s)", firstName);
+			bStatus= GapNavigation.textInputfield("First Name(s)", objMap.get("FirstName"));
 			if(!bStatus) return bStatus;			
 			//enter surname
-			bStatus= GapNavigation.textInputfield("Surname", surName);
+			bStatus= GapNavigation.textInputfield("Surname", objMap.get("Surname"));
 			if(!bStatus) return bStatus;			
 			//enter contact number
-			bStatus= GapNavigation.textInputfield("Cellphone Number", phoneNumber);
+			bStatus= GapNavigation.textInputfield("Cellphone Number", objMap.get("Cellphone"));
 			if(!bStatus) return bStatus;			
 			//enter email address
-			bStatus= GapNavigation.textInputfield("Email Address", email);	
+			bStatus= GapNavigation.textInputfield("Email Address", objMap.get("Email"));	
 			if(!bStatus) return bStatus;
 						
 			return bStatus;
 		}
-	
+		
+		
+	//Common function to click on CONTINUE button
 		public static boolean continueButton() throws HeadlessException, IOException, AWTException
 		{	
 			String getText= GapNavigation.verifyText();
 			if(getText.contains("Gap Cover Application"))
 			{
 			bStatus = GapNavigation.continueButton("Continue");
+			Reporting.logResults("Pass", "Finding text" , "Found the required text");
 			}
 			else
 			{
-				 Reporting.logResults("Fail", "Could not find the Text " , "Found the required text");
+				 Reporting.logResults("Fail", "Finding text" , "Found the required text");
 			}
 			if(!bStatus) 
-			{
 			return bStatus;
-			}
+			return bStatus;
+		}
+		
+		public static boolean verifyMenutext() throws HeadlessException, IOException, AWTException
+		{	
+			String getText= GapNavigation.verifyMenuItemText("Health");
+			if(!(getText==("Health")))
+				return bStatus;
 			return bStatus;
 		}
 	
-		public static boolean getToKnowBetterStep(String label, String ValueToSelect, String Intials, String idNumber, String dob) throws InterruptedException, HeadlessException, IOException, AWTException
+		public static boolean getToKnowBetterStep(Map<String, String> objMap) throws InterruptedException, HeadlessException, IOException, AWTException
 		{
 			
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.dropDownParentElements(label));
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.dropDownParentElements(objMap.get("Title")));
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.selectValueByText(ValueToSelect));	
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.selectValueByText(objMap.get("TitleValue")));	
 			if(!bStatus) return bStatus;
-			bStatus=  GapNavigation.textInputfield("Initials", Intials);	
+			bStatus=  GapNavigation.textInputfield("Initials", objMap.get("Initials"));	
 			if(!bStatus) return bStatus;
 			bStatus=  GapNavigation.scrollToElement("RSA ID Number");
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.textInputfield("RSA ID Number", idNumber);
+			bStatus = GapNavigation.textInputfield("RSA ID Number", objMap.get("RSAID"));
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.textInputfield("dd/mm/yyyy", dob);
+			bStatus = GapNavigation.textInputfield("dd/mm/yyyy", objMap.get("DOB"));
 			if(!bStatus) return bStatus;
 			return bStatus;
 		}
 		
-		public static boolean whereDoYouLiveStep(String suiteNo, String streetName, String suburbName, String city, String postalCode) throws InterruptedException, HeadlessException, IOException, AWTException
+		public static boolean whereDoYouLiveStep(Map<String, String> objMap) throws InterruptedException, HeadlessException, IOException, AWTException
 		{
 			//bStatus = GapNavigation.continueButton("Continue");
 			//if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("Apartment/Suite Name and Number", suiteNo);
+			bStatus= GapNavigation.textInputfield("Apartment/Suite Name and Number", objMap.get("ApartmentNumber"));
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("Street Name", streetName);
+			bStatus= GapNavigation.textInputfield("Street Name", objMap.get("StreetName"));
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("Suburb", suburbName);
+			bStatus= GapNavigation.textInputfield("Suburb", objMap.get("Suburb"));
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("City", city);
+			bStatus= GapNavigation.textInputfield("City", objMap.get("City"));
 			if(!bStatus) return bStatus;
 			bStatus= GapNavigation.scrollToElement("Postal Code");
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("Postal Code", postalCode);
+			bStatus= GapNavigation.textInputfield("Postal Code", objMap.get("PostalCode"));
 			if(!bStatus) return bStatus;
 			return bStatus;
 		}
 		
-		public static boolean medicalAidDetails(String aidProvider, String aidNumber, String plan, String planendDate) throws InterruptedException, HeadlessException, IOException, AWTException
+		public static boolean medicalAidDetails(Map<String, String> objMap) throws InterruptedException, HeadlessException, IOException, AWTException
 		{
-			bStatus= GapNavigation.textInputfield("Medical Aid Provider", aidProvider);
+			bStatus= GapNavigation.textInputfield("Medical Aid Provider", objMap.get("MedicalAidProvider"));
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("Medical Aid Number", aidNumber);
+			bStatus= GapNavigation.textInputfield("Medical Aid Number", objMap.get("MedicalAidNumber"));
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("Medical Aid Plan", plan);
+			bStatus= GapNavigation.textInputfield("Medical Aid Plan", objMap.get("MedicalAidPlan"));
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("dd/mm/yyyy", planendDate);	
+			bStatus= GapNavigation.textInputfield("dd/mm/yyyy", objMap.get("MedicalAidStartDate"));	
 			if(!bStatus) return bStatus;
 			return bStatus;
 		}
 		
-		public static boolean paymentDetails(String accountNumber, String accountHolderName) throws InterruptedException, HeadlessException, IOException, AWTException
+		public static boolean paymentDetails(Map<String, String> objMap) throws InterruptedException, HeadlessException, IOException, AWTException
 		{
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.dropDownParentElements("Debit Order Date"));
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.dropDownParentElements("Debit Order Date"));
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.selectValueByNumber("1"));
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.selectValueByNumber("1"));
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.dropDownParentElements("Bank Name"));
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.dropDownParentElements("Bank Name"));
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.selectValueByNumber("1"));
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.selectValueByNumber("1"));
 			if(!bStatus) return bStatus;
 			bStatus= GapNavigation.scrollToElement("Account Number");
 			if(!bStatus) return bStatus;
-			bStatus= GapNavigation.textInputfield("Account Number", accountNumber);
+			bStatus= GapNavigation.textInputfield("Account Number", objMap.get("AccountNumber"));
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.dropDownParentElements("Account Type"));
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.dropDownParentElements("Account Type"));
 			if(!bStatus) return bStatus;
-			bStatus = GapNavigation.selectValueFromDropDown(GapLocators.NavigationMenu.selectValueByNumber("1"));	
+			bStatus = GapNavigation.selectValueFromDropDown(LocatorsGap.NavigationMenu.selectValueByNumber("1"));	
 			return bStatus;
 		}
 	
@@ -163,8 +177,15 @@ public class GapPageObject {
 			}
 			
 			return bStatus;		
-		
-	
 			}
+		
+		public static boolean selectPlan(Map<String,String> objMap)
+		{
+			//Select GAP plan  
+			bStatus=GapNavigation.selectPlan(objMap);
+			if(!bStatus) return bStatus;
+			return bStatus;
+		}
+		
 }
 

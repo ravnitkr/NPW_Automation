@@ -1,6 +1,6 @@
 package com.npw.locators;
 
-public class GapLocators 
+public class LocatorsGap 
 {
 	public static String sXpath = "";
 	
@@ -61,22 +61,18 @@ public class GapLocators
 			return sXpath;
 		}
 		
-//		public static String verifyTextOnEachPageBeforeEnteringText()
-//		{		
-//			sXpath = "//span[@class='om-label']";
-//			return sXpath;
-//		}
-		
-		public static String verifyTextOnEveryPage()
+		public static String verifyH4TextOnEveryPage()
 		{
 			sXpath = "//h4";
 			return sXpath;
 		}
-//		public static String verifyDependentDetailsText()
-//		{
-//			sXpath = "//div[contains(@class, 'gap-dependent-details')]//h4";
-//			return sXpath;
-//		}
+		
+		public static String verifyMenuText(String hovertext)
+		{
+			sXpath = "//div[contains(@class,'container-desktop')]//li[@class='active']//a[text()='"+hovertext+"']";
+			return sXpath;
+		}
+
 		public static String startCover()
 		{
 			sXpath = "//span[contains(@class, 'om-icon-container')]";
@@ -85,6 +81,11 @@ public class GapLocators
 		public static String postalCode()
 		{
 			sXpath = "//span[contains(@class, 'om-icon-container')]";
+			return sXpath;
+		}
+		public static String  selectGapPlan(String planLink)
+		{
+			sXpath = "//div[contains(@class,'om-product-card-content-container')]//div[contains(@class,'om-product-card-button-container')]//a[contains(@href, '"+planLink+"')]";
 			return sXpath;
 		}
 		

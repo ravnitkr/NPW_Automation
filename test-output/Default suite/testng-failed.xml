@@ -3,13 +3,20 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.npw.testscripts.gap.TC_001">
+      <class name="com.npw.testscripts.ra.TC_01_CreateRAApplication">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="createApp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.ra.TC_01_CreateRAApplication -->
+      <class name="com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication">
         <methods>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="submitApp"/>
+          <include name="errorMsgLeadtrackerRA"/>
         </methods>
-      </class> <!-- com.npw.testscripts.gap.TC_001 -->
+      </class> <!-- com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
