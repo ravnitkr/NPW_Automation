@@ -1,18 +1,14 @@
 <suite name="RunningGAP/RATestCases">
- <test name="GAPTestCases">
- <classes>
- <class name="com.npw.testscripts.gap.TC_001" />
- <class name="com.npw.testscripts.gap.TC_002" />
- <class name="com.npw.testscripts.gap.TC_003" />
- <class name="com.npw.testscripts.gap.TC_004" />
- </classes>
- </test>
- 
- 
- <test name="RATestCases">
- <classes>
- <class name="com.npw.testscripts.ra.TC_01_CreateRAApplication" />
- <class name="com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication" />
- </classes>
- </test>
+	<test name="GAPTestCases">
+		<classes>
+			<class name="com.npw.testscripts.gap.TC_001_PositiveFlow" />
+			<class name="com.npw.testscripts.gap.TC_002_KnowYouBetterPage_Validations_InvalidValuesEntered" />
+			<class name="com.npw.testscripts.gap.TC_003_GreatDecisionPage_Validations_INvalidValuesEntered" />
+			<class name="com.npw.testscripts.gap.TC_004_ResidentialAddressPage_Validations_InvalidValuesEntered" />
+			<class name="com.npw.testscripts.gap.TC_005_GreatDecisionPage_Validations_WithBlankTextFields" />
+			<class name="com.npw.testscripts.gap.TC_006_KnowYouBetterPage_Validations_WithBlankTextFields" />
+			<class name="com.npw.testscripts.gap.TC_007_MedicalAidPage_Validations_InvalidValuesEntered" />
+			<class name="com.npw.testscripts.gap.TC_008_MedicalAidPage_Validations_WithBlankTextFields" />
+		</classes>
+	</test>
 </suite>

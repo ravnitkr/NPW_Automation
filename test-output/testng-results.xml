@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11501" started-at="2020-01-19T20:44:22Z" finished-at="2020-01-19T20:44:33Z">
+  <suite name="Default suite" duration-ms="19752" started-at="2020-01-31T11:27:41Z" finished-at="2020-01-31T11:28:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11501" started-at="2020-01-19T20:44:22Z" finished-at="2020-01-19T20:44:33Z">
-      <class name="com.npw.testscripts.gap.TC_001">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[TC_001 passed=0 failed=0 skipped=0]]" name="launchBrowser" is-config="true" duration-ms="6259" started-at="2020-01-19T22:44:22Z" finished-at="2020-01-19T22:44:28Z">
+    <test name="Default test" duration-ms="19752" started-at="2020-01-31T11:27:41Z" finished-at="2020-01-31T11:28:01Z">
+      <class name="com.npw.testscripts.gap.TC_010_PaymentPage_Validations_WithBlankTextFields">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:[TC_010_PaymentPage_Validations_WithBlankTextFields passed=0 failed=0 skipped=0]]" name="launchBrowser" is-config="true" duration-ms="5045" started-at="2020-01-31T13:27:41Z" finished-at="2020-01-31T13:27:46Z">
           <params>
             <param index="0">
               <value>
@@ -33,15 +33,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="submitApp()[pri:0, instance:[TC_001 passed=0 failed=0 skipped=0]]" name="submitApp" duration-ms="4995" started-at="2020-01-19T22:44:28Z" finished-at="2020-01-19T22:44:33Z">
+        <test-method status="PASS" signature="GetAllDetailsFromResidentialPage()[pri:0, instance:[TC_010_PaymentPage_Validations_WithBlankTextFields passed=0 failed=0 skipped=0]]" name="GetAllDetailsFromResidentialPage" duration-ms="14510" started-at="2020-01-31T13:27:46Z" finished-at="2020-01-31T13:28:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitApp -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:[TC_001 passed=0 failed=0 skipped=0]]" name="closeBrowser" is-config="true" duration-ms="240" started-at="2020-01-19T22:44:33Z" finished-at="2020-01-19T22:44:33Z">
+        </test-method> <!-- GetAllDetailsFromResidentialPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:[TC_010_PaymentPage_Validations_WithBlankTextFields passed=0 failed=0 skipped=0]]" name="closeBrowser" is-config="true" duration-ms="189" started-at="2020-01-31T13:28:01Z" finished-at="2020-01-31T13:28:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.npw.testscripts.gap.TC_001 -->
+      </class> <!-- com.npw.testscripts.gap.TC_010_PaymentPage_Validations_WithBlankTextFields -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,195 @@
+2020-01-31 13:25:53 INFO  Browser:65 - The application has been invoked successfully in Google Chrome with URL:https://new-public-web-qa.nonprod.digitalplatform.oldmutual.co.za/personal/solutions/health/gap-cover/intro
+2020-01-31 13:25:55 INFO  Browser:135 - Chrome browser is opened successfully
+2020-01-31 13:25:59 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:25:59 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:25:59 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:25:59 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:25:59 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:25:59 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:25:59 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:25:59 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:25:59 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:25:59 INFO  Reporting:100 - Pass, Click on CONTINUE button, CLicked on Continue button
+2020-01-31 13:25:59 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is visible after waiting.
+2020-01-31 13:25:59 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is clickable after waiting.
+2020-01-31 13:25:59 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is visible after waiting.
+2020-01-31 13:25:59 INFO  Elements:103 - The text Ravneet has been input successfully.
+2020-01-31 13:25:59 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Surname')] is visible after waiting.
+2020-01-31 13:25:59 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Surname')] is clickable after waiting.
+2020-01-31 13:25:59 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Surname')] is visible after waiting.
+2020-01-31 13:26:00 INFO  Elements:103 - The text Kaur has been input successfully.
+2020-01-31 13:26:00 INFO  Reporting:100 - Pass, Creating a random Phone number: , Created a random Phone number
+2020-01-31 13:26:00 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is visible after waiting.
+2020-01-31 13:26:00 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is clickable after waiting.
+2020-01-31 13:26:00 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is visible after waiting.
+2020-01-31 13:26:00 INFO  Elements:103 - The text 0645083736 has been input successfully.
+2020-01-31 13:26:00 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is visible after waiting.
+2020-01-31 13:26:00 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is clickable after waiting.
+2020-01-31 13:26:00 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is visible after waiting.
+2020-01-31 13:26:00 INFO  Elements:103 - The text rkaur@oldmutual.com has been input successfully.
+2020-01-31 13:26:00 INFO  Reporting:100 - Pass, Enter/Fill the details in Decision page., Succesfully entered the details in decision page.
+2020-01-31 13:26:01 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:26:01 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:26:01 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:26:01 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:26:01 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:26:01 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:26:01 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:26:01 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:26:01 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:26:01 INFO  Reporting:100 - Pass, Click on CONTINUE button, Clicked on Continue button
+2020-01-31 13:26:02 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:26:02 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:26:03 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:26:03 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:26:03 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:26:03 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:26:03 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:26:03 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:26:03 INFO  Reporting:100 - Pass, Click on CONTINUE button, CLicked on Continue button
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //om-dropdown-field[@label='Title'] is visible after waiting.
+2020-01-31 13:26:03 INFO  Wait:55 - element By.xpath: //om-dropdown-field[@label='Title'] is clickable after waiting.
+2020-01-31 13:26:03 INFO  Verify:43 - Element By.xpath: //om-dropdown-field[@label='Title']  visibility is :true
+2020-01-31 13:26:03 INFO  Elements:180 - The element By.xpath: //om-dropdown-field[@label='Title'] has been clicked successfully
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //ul[@class='dropdown-options-list']//li[text()='Prof'] is visible after waiting.
+2020-01-31 13:26:03 INFO  Wait:55 - element By.xpath: //ul[@class='dropdown-options-list']//li[text()='Prof'] is clickable after waiting.
+2020-01-31 13:26:03 INFO  Verify:43 - Element By.xpath: //ul[@class='dropdown-options-list']//li[text()='Prof']  visibility is :true
+2020-01-31 13:26:03 INFO  Elements:180 - The element By.xpath: //ul[@class='dropdown-options-list']//li[text()='Prof'] has been clicked successfully
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Initials')] is visible after waiting.
+2020-01-31 13:26:03 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Initials')] is clickable after waiting.
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Initials')] is visible after waiting.
+2020-01-31 13:26:03 INFO  Elements:103 - The text RK has been input successfully.
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'RSA ID Number')] is visible after waiting.
+2020-01-31 13:26:03 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'RSA ID Number')] is clickable after waiting.
+2020-01-31 13:26:03 INFO  Verify:43 - Element By.xpath: //input[contains(@placeholder, 'RSA ID Number')]  visibility is :true
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'RSA ID Number')] is visible after waiting.
+2020-01-31 13:26:03 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'RSA ID Number')] is clickable after waiting.
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'RSA ID Number')] is visible after waiting.
+2020-01-31 13:26:03 INFO  Elements:103 - The text 9110104800089 has been input successfully.
+2020-01-31 13:26:03 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'dd/mm/yyyy')] is visible after waiting.
+2020-01-31 13:26:03 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'dd/mm/yyyy')] is clickable after waiting.
+2020-01-31 13:26:04 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'dd/mm/yyyy')] is visible after waiting.
+2020-01-31 13:26:04 INFO  Elements:103 - The text 10/10/1991 has been input successfully.
+2020-01-31 13:26:04 INFO  Reporting:100 - Pass, Enter/Fill the details in get To know better page., Succesfully entered the details in get To know better page.
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:26:05 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:26:05 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:26:05 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:26:05 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:26:05 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:26:05 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:26:05 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:26:05 INFO  Reporting:100 - Pass, Click on CONTINUE button, Clicked on Continue button
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Apartment/Suite Name and Number')] is visible after waiting.
+2020-01-31 13:26:05 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Apartment/Suite Name and Number')] is clickable after waiting.
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Apartment/Suite Name and Number')] is visible after waiting.
+2020-01-31 13:26:05 INFO  Elements:103 - The text 101 has been input successfully.
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Street Name')] is visible after waiting.
+2020-01-31 13:26:05 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Street Name')] is clickable after waiting.
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Street Name')] is visible after waiting.
+2020-01-31 13:26:05 INFO  Elements:103 - The text Water Stone has been input successfully.
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Suburb')] is visible after waiting.
+2020-01-31 13:26:05 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Suburb')] is clickable after waiting.
+2020-01-31 13:26:05 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Suburb')] is visible after waiting.
+2020-01-31 13:26:06 INFO  Elements:103 - The text milnerton has been input successfully.
+2020-01-31 13:26:06 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'City')] is visible after waiting.
+2020-01-31 13:26:06 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'City')] is clickable after waiting.
+2020-01-31 13:26:06 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'City')] is visible after waiting.
+2020-01-31 13:26:06 INFO  Elements:103 - The text Cape Town has been input successfully.
+2020-01-31 13:26:06 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Postal Code')] is visible after waiting.
+2020-01-31 13:26:06 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Postal Code')] is clickable after waiting.
+2020-01-31 13:26:06 INFO  Verify:43 - Element By.xpath: //input[contains(@placeholder, 'Postal Code')]  visibility is :true
+2020-01-31 13:26:06 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Postal Code')] is visible after waiting.
+2020-01-31 13:26:06 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Postal Code')] is clickable after waiting.
+2020-01-31 13:26:06 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Postal Code')] is visible after waiting.
+2020-01-31 13:26:06 INFO  Elements:103 - The text 7405 has been input successfully.
+2020-01-31 13:26:06 INFO  Reporting:100 - Pass, Enter/Fill the details in where do you live page, Succesfully entered the details in where do you live page
+2020-01-31 13:26:07 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:26:07 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:26:07 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:26:07 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:26:07 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:26:07 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:26:07 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:26:07 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:26:07 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:26:07 INFO  Reporting:100 - Pass, Click on CONTINUE button, Clicked on Continue button
+2020-01-31 13:26:08 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:26:08 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:26:08 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:26:08 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:26:08 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:26:09 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:26:09 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:26:09 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:26:09 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:26:09 INFO  Reporting:100 - Pass, Click on CONTINUE button, Clicked on Continue button
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Provider')] is visible after waiting.
+2020-01-31 13:26:09 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Provider')] is clickable after waiting.
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Provider')] is visible after waiting.
+2020-01-31 13:26:09 INFO  Elements:103 - The text Discovery has been input successfully.
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Number')] is visible after waiting.
+2020-01-31 13:26:09 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Number')] is clickable after waiting.
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Number')] is visible after waiting.
+2020-01-31 13:26:09 INFO  Elements:103 - The text 454646 has been input successfully.
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Plan')] is visible after waiting.
+2020-01-31 13:26:09 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Plan')] is clickable after waiting.
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Medical Aid Plan')] is visible after waiting.
+2020-01-31 13:26:09 INFO  Elements:103 - The text Classic saver has been input successfully.
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'dd/mm/yyyy')] is visible after waiting.
+2020-01-31 13:26:09 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'dd/mm/yyyy')] is clickable after waiting.
+2020-01-31 13:26:09 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'dd/mm/yyyy')] is visible after waiting.
+2020-01-31 13:26:10 INFO  Elements:103 - The text 11/11/1987 has been input successfully.
+2020-01-31 13:26:10 INFO  Reporting:100 - Pass, Enter/Fill the details in medical cover page, Succesfully entered the details in Medical Aid page
+2020-01-31 13:26:11 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:26:11 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:26:11 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:26:11 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:26:11 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:26:11 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:26:11 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:26:11 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:26:11 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:26:11 INFO  Reporting:100 - Pass, Click on CONTINUE button, Clicked on Continue button
+2020-01-31 13:26:11 INFO  Wait:37 - element By.xpath: //om-dropdown-field[@label='Debit Order Date'] is visible after waiting.
+2020-01-31 13:26:11 INFO  Wait:55 - element By.xpath: //om-dropdown-field[@label='Debit Order Date'] is clickable after waiting.
+2020-01-31 13:26:11 INFO  Verify:43 - Element By.xpath: //om-dropdown-field[@label='Debit Order Date']  visibility is :true
+2020-01-31 13:26:11 INFO  Elements:180 - The element By.xpath: //om-dropdown-field[@label='Debit Order Date'] has been clicked successfully
+2020-01-31 13:26:11 INFO  Wait:37 - element By.xpath: //ul[@class='dropdown-options-list']//li['1'] is visible after waiting.
+2020-01-31 13:26:11 INFO  Wait:55 - element By.xpath: //ul[@class='dropdown-options-list']//li['1'] is clickable after waiting.
+2020-01-31 13:26:11 INFO  Verify:43 - Element By.xpath: //ul[@class='dropdown-options-list']//li['1']  visibility is :true
+2020-01-31 13:26:11 INFO  Elements:180 - The element By.xpath: //ul[@class='dropdown-options-list']//li['1'] has been clicked successfully
+2020-01-31 13:26:11 INFO  Wait:37 - element By.xpath: //om-dropdown-field[@label='Bank Name'] is visible after waiting.
+2020-01-31 13:26:11 INFO  Wait:55 - element By.xpath: //om-dropdown-field[@label='Bank Name'] is clickable after waiting.
+2020-01-31 13:26:11 INFO  Verify:43 - Element By.xpath: //om-dropdown-field[@label='Bank Name']  visibility is :true
+2020-01-31 13:26:11 INFO  Elements:180 - The element By.xpath: //om-dropdown-field[@label='Bank Name'] has been clicked successfully
+2020-01-31 13:26:12 INFO  Wait:37 - element By.xpath: //ul[@class='dropdown-options-list']//li['1'] is visible after waiting.
+2020-01-31 13:26:12 INFO  Wait:55 - element By.xpath: //ul[@class='dropdown-options-list']//li['1'] is clickable after waiting.
+2020-01-31 13:26:12 INFO  Verify:43 - Element By.xpath: //ul[@class='dropdown-options-list']//li['1']  visibility is :true
+2020-01-31 13:26:12 INFO  Elements:180 - The element By.xpath: //ul[@class='dropdown-options-list']//li['1'] has been clicked successfully
+2020-01-31 13:26:12 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Account Number')] is visible after waiting.
+2020-01-31 13:26:12 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Account Number')] is clickable after waiting.
+2020-01-31 13:26:12 INFO  Verify:43 - Element By.xpath: //input[contains(@placeholder, 'Account Number')]  visibility is :true
+2020-01-31 13:26:12 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Account Number')] is visible after waiting.
+2020-01-31 13:26:12 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Account Number')] is clickable after waiting.
+2020-01-31 13:26:12 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Account Number')] is visible after waiting.
+2020-01-31 13:26:12 INFO  Elements:103 - The text  has been input successfully.
+2020-01-31 13:26:12 INFO  Wait:37 - element By.xpath: //om-dropdown-field[@label='Account Type'] is visible after waiting.
+2020-01-31 13:26:12 INFO  Wait:55 - element By.xpath: //om-dropdown-field[@label='Account Type'] is clickable after waiting.
+2020-01-31 13:26:12 INFO  Verify:43 - Element By.xpath: //om-dropdown-field[@label='Account Type']  visibility is :true
+2020-01-31 13:26:12 INFO  Elements:180 - The element By.xpath: //om-dropdown-field[@label='Account Type'] has been clicked successfully
+2020-01-31 13:26:32 WARN  Wait:43 - element By.xpath: //ul[@class='dropdown-options-list']//li['1'] is not present after waiting 20 secs.
+2020-01-31 13:26:33 ERROR Reporting:103 - Fail, Added details on payment page, Unable to add details on payment pageExpected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='dropdown-options-list']//li['1'] (tried for 20 second(s) with 500 MILLISECONDS interval)
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Ravneets-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:b522:8a9e:b035%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_222'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=/var/folders/jm/343wqhm91bq0703d0xwzjqdh0000gn/T/.com.google.Chrome.gp7Vv0}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:61281}, acceptInsecureCerts=false, browserVersion=79.0.3945.130, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true}]
+Session ID: 2e6b5e5e9cce2c92c7ce9243aeca2eed
+2020-01-31 13:26:33 WARN  Browser:346 - The current browser could not be closed due to invalid session id
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Ravneets-MacBook-Pro.local', ip: 'fe80:0:0:0:1ced:b522:8a9e:b035%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.2', java.version: '1.8.0_222'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}), userDataDir=/var/folders/jm/343wqhm91bq0703d0xwzjqdh0000gn/T/.com.google.Chrome.gp7Vv0}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:61281}, acceptInsecureCerts=false, browserVersion=79.0.3945.130, browserName=chrome, javascriptEnabled=true, platformName=mac os x, setWindowRect=true}]
+Session ID: 2e6b5e5e9cce2c92c7ce9243aeca2eed

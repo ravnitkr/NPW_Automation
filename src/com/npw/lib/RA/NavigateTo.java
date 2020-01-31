@@ -74,7 +74,7 @@ public class NavigateTo extends BaseTest
 	public static boolean hoverAndClickHeaderMenu(String sHeader, String sChildHeader, String sAppname) throws HeadlessException, IOException, AWTException
 	{
 
-		//bStatus=Wait.waitForElementVisibility(By.xpath(Locators.NavigationMenu.getHeaderMenu(sHeader)), iRAwait);
+		bStatus=Wait.waitForElementVisibility(By.xpath(LocatorsRA.NavigationMenu.getHeaderMenu(sHeader)), iRAwait);
 		bStatus=Elements.clickElement(By.xpath(LocatorsRA.NavigationMenu.getHeaderMenu(sHeader)));
 		if(!bStatus) return bStatus;
 		
@@ -99,10 +99,9 @@ public class NavigateTo extends BaseTest
 	
 	
 	public static boolean hoverAndClickHeaderMenu(String sHeader, String sChildHeader) throws HeadlessException, IOException, AWTException
-	{
-
-		
-		//bStatus=Wait.waitForElementVisibility(By.xpath(Locators.NavigationMenu.getHeaderMenu(sHeader)), iRAwait);
+	{	
+		bStatus=Wait.waitForElementVisibility(By.xpath(LocatorsRA.NavigationMenu.getHeaderMenu(sHeader)), iRAwait);
+		if(!bStatus) return bStatus;
 		bStatus=Elements.clickElement(By.xpath(LocatorsRA.NavigationMenu.getHeaderMenu(sHeader)));
 		if(!bStatus) return bStatus;
 	
@@ -127,7 +126,7 @@ public class NavigateTo extends BaseTest
 	{
 
 		
-		//bStatus=Wait.waitForElementVisibility(By.xpath(Locators.NavigationMenu.getHeaderMenu(sHeader)), iRAwait);
+		bStatus=Wait.waitForElementVisibility(By.xpath(LocatorsRA.NavigationMenu.getHeaderMenu(sHeader)), iRAwait);
 		bStatus=Elements.clickElement(By.xpath(LocatorsRA.NavigationMenu.getHeaderMenu(sHeader)));
 		if(!bStatus) return bStatus;
 		

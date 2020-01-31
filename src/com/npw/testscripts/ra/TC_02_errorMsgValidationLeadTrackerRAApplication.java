@@ -20,7 +20,7 @@ public class TC_02_errorMsgValidationLeadTrackerRAApplication extends BaseTest {
 
 	private static Map<String,String> objRADtls;
 	private static Map<String,String> objRAError;
-	private static String TestData_path_RA= "TestData/RA_TestData.xls";
+	private static String TestData_path_RA= "TestData/TestData.xls";
 	private static String sheetName="RA_Sheet";
 	private static String sheetName2="ErrorMessagesValidation";
 	private static String TestCaseName="TC_02_invalidMobileNumberRAApplication";

@@ -96,7 +96,7 @@ public class Elements extends BaseTest
 		bStatus = Wait.waitForElementVisibility(objLocator, 20);
 		if(bStatus)
 		{
-			scrollToView(objLocator);
+			//scrollToView(objLocator);
 			driver.findElement(objLocator).click();
 			driver.findElement(objLocator).clear();
 			driver.findElement(objLocator).sendKeys(sValue);
@@ -121,7 +121,7 @@ public class Elements extends BaseTest
 		bStatus = Wait.waitForElementVisibility(objLocator, 20);
 		if(bStatus)
 		{
-			scrollToView(objLocator);
+			//scrollToView(objLocator);
 			driver.findElement(objLocator).sendKeys(sKey);
 			logger.info("The key "+sKey+" has been pressed against the locator " + objLocator + " successfully.");
 			return true;
@@ -175,7 +175,7 @@ public class Elements extends BaseTest
 		
 		if(bStatus)
 		{
-			scrollToView(objLocator);
+			//scrollToView(objLocator);
 			driver.findElement(objLocator).click();
 			logger.info("The element "+objLocator+" has been clicked successfully");
 			return true;
@@ -188,7 +188,7 @@ public class Elements extends BaseTest
 		bStatus = Verify.verifyElementVisible(objLocator);
 		if(bStatus)
 		{
-			scrollToView(objLocator);
+			//scrollToView(objLocator);
 			driver.findElement(objLocator).clear();
 			logger.info("The text has been cleared from the input box "+objLocator+" successfully");
 			return true;
@@ -361,11 +361,13 @@ public class Elements extends BaseTest
 		return sValue;
 	}
 	
+	
 	public static boolean scrollToView(By objLocator)
 	{
 		bStatus = Verify.verifyElementVisible(objLocator);
 		if(bStatus)
 		{
+		System.out.println("Inside scroll method");
 		JavascriptExecutor je = (JavascriptExecutor) driver;	 		 
 		WebElement element = driver.findElement(objLocator);		 
 		je.executeScript("arguments[0].scrollIntoView(true);",element);

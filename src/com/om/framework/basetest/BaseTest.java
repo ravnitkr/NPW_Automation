@@ -131,8 +131,8 @@ public class BaseTest extends TestListenerAdapter
 			else if(sBrowser.equalsIgnoreCase("EDGE"))
 				driver = Browser.openBrowser(sBrowser, sTestSiteURL, sEdgeDriverPath);
 			else if(sBrowser.equalsIgnoreCase("chrome") || sBrowser.equalsIgnoreCase("cr"))
-				driver = Browser.openBrowser(sBrowser, sTestSiteURL, "/Users/ravneetkaur/Downloads/NPWAutomation/WebDrivers/chromedriver");
-			else if(sBrowser.equalsIgnoreCase("chrome-x"))
+				driver = Browser.openBrowser(sBrowser, sTestSiteURL, sChromeDriverPath);
+				else if(sBrowser.equalsIgnoreCase("chrome-x"))
 				driver = Browser.openChromeBrowserWithXtension(sTestSiteURL, sChromeDriverPath, sChromeExtension);
 			else if((sBrowser.equalsIgnoreCase("ff") || sBrowser.equalsIgnoreCase("firefox")) && sFfDriverPath!=null)
 				driver = Browser.openBrowser(sBrowser, sTestSiteURL, sFfDriverPath);

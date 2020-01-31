@@ -23,7 +23,7 @@ public class TC_01_CreateRAApplication extends BaseTest {
 	private static boolean bStatus;
 
 	private static Map<String,String> objRADtls;
-	private static String TestData_path_RA= "TestData/RA_TestData.xls";
+	private static String TestData_path_RA= "TestData/TestData.xls";
 	private static String sheetName="RA_Sheet";
 	private static String TestCaseName="TC_01_CreateRAApplication";
 
@@ -31,7 +31,7 @@ public class TC_01_CreateRAApplication extends BaseTest {
 	public static void createApp() throws HeadlessException, IOException, AWTException{
 
 		//Read data from excelsheet 
-		objRADtls = Utilities.readTestData(TestData_path_RA,sheetName, TestCaseName);
+		objRADtls = Utilities.readTestData(TestData_path_RA, sheetName, TestCaseName);
 
 		//Navigation to RA Application page
 		bStatus=NavigateTo.hoverAndClickHeaderMenu(objRADtls);

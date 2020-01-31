@@ -1,0 +1,52 @@
+2020-01-31 11:41:28 INFO  Browser:65 - The application has been invoked successfully in Google Chrome with URL:https://new-public-web-qa.nonprod.digitalplatform.oldmutual.co.za/personal/solutions/health/gap-cover/intro
+2020-01-31 11:41:29 INFO  Browser:135 - Chrome browser is opened successfully
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 11:41:32 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 11:41:32 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 11:41:32 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 11:41:32 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 11:41:32 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 11:41:32 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 11:41:32 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 11:41:32 INFO  Reporting:100 - Pass, Click on CONTINUE button, CLicked on Continue button
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is visible after waiting.
+2020-01-31 11:41:32 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is clickable after waiting.
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is visible after waiting.
+2020-01-31 11:41:32 INFO  Elements:103 - The text Ned has been input successfully.
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Surname')] is visible after waiting.
+2020-01-31 11:41:32 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Surname')] is clickable after waiting.
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Surname')] is visible after waiting.
+2020-01-31 11:41:32 INFO  Elements:103 - The text  has been input successfully.
+2020-01-31 11:41:32 INFO  Reporting:100 - Pass, Creating a random Phone number: , Created a random Phone number
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is visible after waiting.
+2020-01-31 11:41:32 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is clickable after waiting.
+2020-01-31 11:41:32 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is visible after waiting.
+2020-01-31 11:41:33 INFO  Elements:103 - The text 0645083886 has been input successfully.
+2020-01-31 11:41:33 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is visible after waiting.
+2020-01-31 11:41:33 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is clickable after waiting.
+2020-01-31 11:41:33 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is visible after waiting.
+2020-01-31 11:41:33 INFO  Elements:103 - The text rkaur@oldmutual.com has been input successfully.
+2020-01-31 11:41:33 INFO  Reporting:100 - Pass, Enter/Fill the details in Decision page., Succesfully entered the details in decision page.
+2020-01-31 11:41:34 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 11:41:34 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 11:41:34 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 11:41:34 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 11:41:34 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 11:41:34 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 11:41:34 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 11:41:34 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 11:41:34 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 11:41:34 INFO  Reporting:100 - Pass, Click on CONTINUE button, Clicked on Continue button
+2020-01-31 11:41:35 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 11:41:35 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 11:41:35 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 11:41:35 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 11:41:35 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 11:41:35 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 11:41:36 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 11:41:36 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 11:41:36 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 11:41:36 INFO  Reporting:100 - Pass, Click on CONTINUE button, CLicked on Continue button
+2020-01-31 11:41:38 WARN  Wait:43 - element By.xpath: //om-dropdown-field[@label='Title'] is not present after waiting 20 secs.
+2020-01-31 11:41:38 ERROR Reporting:103 - Fail, Enter/Fill the details in get To know better page., Unable to enter the details.. due tonull

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RunningGAP/RATestCases]">
+  <test name="RATestCases(failed)">
+    <classes>
+      <class name="com.npw.testscripts.gap.TC_003">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_003 -->
+      <class name="com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="errorMsgLeadtrackerRA"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication -->
+      <class name="com.npw.testscripts.gap.TC_001">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_001 -->
+      <class name="com.npw.testscripts.ra.TC_01_CreateRAApplication">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="createApp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.ra.TC_01_CreateRAApplication -->
+      <class name="com.npw.testscripts.gap.TC_004">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_004 -->
+      <class name="com.npw.testscripts.gap.TC_002">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_002 -->
+    </classes>
+  </test> <!-- RATestCases(failed) -->
+</suite> <!-- Failed suite [RunningGAP/RATestCases] -->

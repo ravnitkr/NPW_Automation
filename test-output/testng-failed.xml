@@ -3,20 +3,42 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.npw.testscripts.ra.TC_01_CreateRAApplication">
+      <class name="com.npw.testscripts.gap.TC_006_KnowYouBetterPage_Validations_WithBlankTextFields">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="createApp"/>
+          <include name="getAllValidationsFromKNowYouBetterPage"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.npw.testscripts.ra.TC_01_CreateRAApplication -->
-      <class name="com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication">
+      </class> <!-- com.npw.testscripts.gap.TC_006_KnowYouBetterPage_Validations_WithBlankTextFields -->
+      <class name="com.npw.testscripts.gap.TC_001_PositiveFlow">
         <methods>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="errorMsgLeadtrackerRA"/>
         </methods>
-      </class> <!-- com.npw.testscripts.ra.TC_02_errorMsgValidationLeadTrackerRAApplication -->
+      </class> <!-- com.npw.testscripts.gap.TC_001_PositiveFlow -->
+      <class name="com.npw.testscripts.gap.TC_004_ResidentialAddressPage_Validations_InvalidValuesEntered">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="GetAllDetailsFromResidentialPage"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_004_ResidentialAddressPage_Validations_InvalidValuesEntered -->
+      <class name="com.npw.testscripts.gap.TC_003_GreatDecisionPage_Validations_INvalidValuesEntered">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_003_GreatDecisionPage_Validations_INvalidValuesEntered -->
+      <class name="com.npw.testscripts.gap.TC_002_KnowYouBetterPage_Validations_InvalidValuesEntered">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="getAllValidationsStepTwo"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_002_KnowYouBetterPage_Validations_InvalidValuesEntered -->
+      <class name="com.npw.testscripts.gap.TC_005_GreatDecisionPage_Validations_WithBlankTextFields">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="getAllValidationsFromGreatDecisionPage"/>
+        </methods>
+      </class> <!-- com.npw.testscripts.gap.TC_005_GreatDecisionPage_Validations_WithBlankTextFields -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

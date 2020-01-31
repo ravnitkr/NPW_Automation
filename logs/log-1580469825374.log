@@ -1,0 +1,30 @@
+2020-01-31 13:23:45 INFO  Browser:65 - The application has been invoked successfully in Google Chrome with URL:https://new-public-web-qa.nonprod.digitalplatform.oldmutual.co.za/personal/solutions/health/gap-cover/intro
+2020-01-31 13:23:46 INFO  Browser:135 - Chrome browser is opened successfully
+2020-01-31 13:23:50 INFO  Wait:37 - element By.xpath: //h4 is visible after waiting.
+2020-01-31 13:23:50 INFO  Wait:55 - element By.xpath: //h4 is clickable after waiting.
+2020-01-31 13:23:50 INFO  Verify:43 - Element By.xpath: //h4  visibility is :true
+2020-01-31 13:23:50 WARN  Elements:338 - The text Gap Cover Application from the element By.xpath: //h4 is retrieved
+2020-01-31 13:23:50 INFO  Wait:37 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is visible after waiting.
+2020-01-31 13:23:50 INFO  Wait:55 - element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] is clickable after waiting.
+2020-01-31 13:23:50 INFO  Verify:43 - Element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue']  visibility is :true
+2020-01-31 13:23:50 INFO  Elements:180 - The element By.xpath: //span[contains(@class,'om-button-text') and text()='Continue'] has been clicked successfully
+2020-01-31 13:23:50 INFO  Reporting:100 - Pass, Finding text, Found the text: Gap Cover Application
+2020-01-31 13:23:50 INFO  Reporting:100 - Pass, Click on CONTINUE button, CLicked on Continue button
+2020-01-31 13:23:50 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is visible after waiting.
+2020-01-31 13:23:50 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is clickable after waiting.
+2020-01-31 13:23:50 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'First Name(s)')] is visible after waiting.
+2020-01-31 13:23:51 INFO  Elements:103 - The text Ravneet has been input successfully.
+2020-01-31 13:23:51 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Surname')] is visible after waiting.
+2020-01-31 13:23:51 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Surname')] is clickable after waiting.
+2020-01-31 13:23:51 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Surname')] is visible after waiting.
+2020-01-31 13:23:51 INFO  Elements:103 - The text Kaur has been input successfully.
+2020-01-31 13:23:51 INFO  Reporting:100 - Pass, Creating a random Phone number: , Created a random Phone number
+2020-01-31 13:23:51 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is visible after waiting.
+2020-01-31 13:23:51 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is clickable after waiting.
+2020-01-31 13:23:51 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Cellphone Number')] is visible after waiting.
+2020-01-31 13:23:51 INFO  Elements:103 - The text 0645081848 has been input successfully.
+2020-01-31 13:23:51 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is visible after waiting.
+2020-01-31 13:23:51 INFO  Wait:55 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is clickable after waiting.
+2020-01-31 13:23:51 INFO  Wait:37 - element By.xpath: //input[contains(@placeholder, 'Email Address')] is visible after waiting.
+2020-01-31 13:23:52 INFO  Elements:103 - The text rkaur@oldmutual.com has been input successfully.
+2020-01-31 13:23:52 INFO  Reporting:100 - Pass, Enter invalid details on great decision step., Added details  on great decision step

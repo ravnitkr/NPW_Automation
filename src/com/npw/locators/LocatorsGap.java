@@ -83,9 +83,15 @@ public class LocatorsGap
 			sXpath = "//span[contains(@class, 'om-icon-container')]";
 			return sXpath;
 		}
-		public static String  selectGapPlan(String planLink)
+		public static String selectGapPlanTab(String planName)
 		{
-			sXpath = "//div[contains(@class,'om-product-card-content-container')]//div[contains(@class,'om-product-card-button-container')]//a[contains(@href, '"+planLink+"')]";
+			//sXpath = "//div[contains(@class, 'tabs-container')]//*[text()='"+planName+"']";
+			sXpath = "//*[text()='"+planName+"']//ancestor::div[@class='om-product-card-container']//*[text()='BUY NOW']";
+			return sXpath;
+		}
+		public static String selectHeaderName(String headerName)
+		{
+			sXpath="//div[contains(@class,'container-desktop')]//a[text()='"+headerName +"']";
 			return sXpath;
 		}
 		
