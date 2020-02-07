@@ -6,14 +6,4 @@ node {
 
 		}
 
-	stage ('Build'){
-
-    	dir(“NPW_Automation) {
-
-	   sh “gradle build"
-
-       }
-
-		}
-
 }
